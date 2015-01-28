@@ -60,7 +60,7 @@ class Error
       $out .= "\t\tMore: " . PHP_EOL;
       $out .= empty($v[$i]["function"]) ? "" : "\t\t\t" . "Function:"  .   $v[$i]["function"];
       $out .= empty($v[$i]["class"])    ? "" : "\t\t\t" . "Class:"     .   $v[$i]["class"];
-      $out .= empty($v[$i]["class"])    ? "" : "\t\t\t" . "Object:"    .   json_encode($v[$i]["object"]);
+      $out .= empty($v[$i]["object"])    ? "" : "\t\t\t" . "Object:"    .   json_encode($v[$i]["object"]);
     }
     $out.='</span></pre>';
     echo $out;
